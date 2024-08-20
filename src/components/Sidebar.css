@@ -1,0 +1,32 @@
+/* components/Sidebar.css */
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #c67ace;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  
+  #sideNav.open {
+    right: 0;
+  }
+  
+  #sideNav nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #sideNav nav ul li {
+    margin: 0;
+    padding: 15px;
+  }
+  
+  #sideNav nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  

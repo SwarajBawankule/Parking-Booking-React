@@ -5,7 +5,7 @@ class Form extends React.Component {
 	constructor(props) {
     super(props);
     this.state = {
-      newCarColor: "BLUE", //assigned as default value
+      newCarColor: "Bike", //assigned as default value
       newCarRegNo: ""
     }
     this.addCar = this.addCar.bind(this);
@@ -70,12 +70,11 @@ class Form extends React.Component {
           placeholder="KA-01-AB-1234"
         />
         <select name="select" onChange={this.setSelectedColor}>
-          <option value="Blue">Blue</option>
-          <option value="Red">Red</option>
-          <option value="White">White</option>
-          <option value="Black">Black</option>
+          <option value="Bike">Bike</option>
+          <option value="CAR">Car</option>
+         
         </select>
-        <button onClick={this.addCar}>Park Car</button>
+        <button onClick={this.addCar}>Park </button>
       </form>
 		);
 	}
